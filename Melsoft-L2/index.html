@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Melsoft</title>
+  <script src="https://kit.fontawesome.com/da1278e247.js" crossorigin="anonymous"></script>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="data:image/png;base64,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" rel="icon">
+  <link href="data:image/png;base64,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" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: QuickStart
+  * Template URL: https://bootstrapmade.com/quickstart-bootstrap-startup-website-template/
+  * Updated: Jun 14 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid container-xl position-relative d-flex align-items-center">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto">
+        <img src="https://sp-ao.shortpixel.ai/client/to_auto,q_lossless,ret_img,w_1024/https://melsoft.co.za/wp-content/uploads/2021/12/Melsoft-Logo-White-1-1024x229.png" alt="Melsoft-logo">
+        <h1 class="sitename">Melsoft</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero" class="active">Home</a></li>
+
+          <li><a href="index.html#features">About</a></li>
+          <li><a href="index.html#testimonials">Reviews</a></li>
+          <li><a href="index.html#services">Blog</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="#">Services</a></li>
+              <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Web Development</a></li>
+                  <li><a href="#">Software Development</a></li>
+                  <li><a href="#">Digital Marketing</a></li>
+                  <li><a href="#">Branding</a></li>
+                  <li><a href="#">Ad-Hoc Services</a></li>
+                </ul>
+              
+          
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <a class="btn-getstarted" href="index.html#about">Get in Touch!</a>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+      <div class="hero-bg">
+        <img src="assets/img/hero-bg-light.webp" alt="">
+      </div>
+      <div class="container text-center">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <h1 data-aos="fade-up">Welcome to <span>Melsoft</span></h1>
+          <p data-aos="fade-up" data-aos-delay="100"> Personalized services, with high-impact digital solutions.<br></p>
+          <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
+            <a href="#about" class="btn-get-started">Get in Touch</a>
+          </div>
+          <img src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid hero-img" alt="hero section image" data-aos="zoom-out" data-aos-delay="300">
+        </div>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Featured Services Section -->
+    <section id="featured-services" class="featured-services section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-pen"></i></div>
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link">Branding</a></h4>
+                <p class="description">Producing innovative ideas to create branding initiatives for your marketing strategies.</p>
+              </div>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-code"></i></div>
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link">Web & Software Development </a></h4>
+                <p class="description">We develop tailored made software solutions that suit our cliets specifications and Web Development services. </p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-4 col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item d-flex">
+              <div class="icon flex-shrink-0"><i class="bi bi-bar-device"></i></div>
+              <div>
+                <h4 class="title"><a href="#" class="stretched-link">Ad-Hoc Services</a></h4>
+                <p class="description">Your go to Web Registration , Web Hosting and mainatenance organization.</p>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Featured Services Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="100">
+            <p class="who-we-are">Who We Are</p>
+            <h3>Where Future-Proof Strategy Meets Digital Innovation</h3>
+            <p class="fst-italic">
+              Through unified branding, future-forward software development, and strategic digital marketing, Melsoft works with the world’s most ambitious brands in creating innovative digital products designed to fuel innovation using the following Tech Stacks:
+
+            </p>
+            <ul>
+              <li><i class="bi bi-check-circle"></i> <span>MongoDB</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Node.JS</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>PHP</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Microsoft.NET</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>My SQL</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Firebase</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Azure</span></li>
+              GOT A PROJECT?
+            </ul>
+            <a href="#" class="read-more"><span>TELL US MORE</span><i class="bi bi-arrow-right"></i></a>
+          </div>
+
+          <div class="col-lg-6 about-images" data-aos="fade-up" data-aos-delay="200">
+            <div class="row gy-4">
+              <div class="col-lg-6">
+                <img src="https://images.pexels.com/photos/2678468/pexels-photo-2678468.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid" alt="">
+              </div>
+              <div class="col-lg-6">
+                <div class="row gy-4">
+                  <div class="col-lg-12">
+                    <img src=" https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-lg-12">
+                    <img src="https://images.pexels.com/photos/935949/pexels-photo-935949.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- /About Section -->
+
+    <!-- Clients Section -->
+
+    <section id="clients" class="clients section">
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="https://melsoftacademy.com/wp-content/uploads/2022/09/Blue-120x120.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="https://futureofknowledge.org/wp-content/uploads/2021/05/IFK-Highres-logo_capsw@2x-300x135.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="https://mycahub.co.za/wp-content/uploads/2021/01/MYCAHUB_v3-01-1-295x64.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="data:image/png;base64,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" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+          <div class="col-xl-2 col-md-3 col-6 client-logo">
+            <img src="https://ewsetacareers.org.za/wp-content/uploads/2022/12/Ewseta_Logo_Web2-e1569134560893-removebg-preview-120x70.png" class="img-fluid" alt="">
+          </div><!-- End Client Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Clients Section -->
+
+    <!-- Features Section -->
+    <section id="features" class="features section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Our Clients</h2>
+        <p>At Melsoft, we blend cutting-edge technology with a passion for creativity to deliver bespoke solutions that drive results. Whether you’re looking to build a robust software platform, establish a compelling online presence, or enhance your brand visibility, our team of experts is dedicated to realizing your vision.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row justify-content-between">
+
+          <div class="col-lg-5 d-flex align-items-center">
+
+            <ul class="nav nav-tabs" data-aos="fade-up" data-aos-delay="100">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
+                  
+                  <div>
+                    <h4 class="d-none d-lg-block">UNIVERSITY OF JOHANNESBURG</h4>
+                    <p>
+                      Events Management website built using WordPress and Advanced Custom Fields.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
+                  
+                  <div>
+                    <h4 class="d-none d-lg-block">MYCAHUB</h4>
+                    <p>
+                      SAAS Web Application with a Google Chrome Extension built using React Frontend, NodeJS Backend & MongoDB NoSQL Database.
+                    </p>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
+                  
+                  <div>
+                    <h4 class="d-none d-lg-block">MERCURI INTERNATIONAL</h4>
+                    <p>
+                      UI/UX Design for a Sales Coaching Mobile App
+                    </p>
+                  </div>
+                </a>
+              </li>
+            </ul><!-- End Tab Nav -->
+
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="tab-content" data-aos="fade-up" data-aos-delay="200">
+
+              <div class="tab-pane fade active show" id="features-tab-1">
+                <img src="https://sp-ao.shortpixel.ai/client/to_auto,q_lossless,ret_img,w_1536/https://melsoft.co.za/wp-content/uploads/2024/04/Melsoft-WB-09-1536x865.png" alt="" class="img-fluid">
+              </div><!-- End Tab Content Item -->
+
+              <div class="tab-pane fade" id="features-tab-2">
+                <img src="https://sp-ao.shortpixel.ai/client/to_auto,q_lossless,ret_img,w_1536/https://melsoft.co.za/wp-content/uploads/2024/04/Melsoft-WB-01-1536x865.png" alt="" class="img-fluid">
+              </div><!-- End Tab Content Item -->
+
+              <div class="tab-pane fade" id="features-tab-3">
+                <img src="https://sp-ao.shortpixel.ai/client/to_auto,q_lossless,ret_img,w_1536/https://melsoft.co.za/wp-content/uploads/2024/04/Melsoft-WB-02-1536x865.png" alt="" class="img-fluid">
+              </div><!-- End Tab Content Item -->
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Features Section -->
+
+    <!-- Features Details Section -->
+    <section id="features-details" class="features-details section">
+
+      <div class="container">
+
+        <div class="row gy-4 justify-content-between features-item">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <img src="https://sp-ao.shortpixel.ai/client/to_auto,q_lossless,ret_img,w_1536/https://melsoft.co.za/wp-content/uploads/2024/04/Melsoft-WB-07-1536x865.png" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-5 d-flex align-items-center" data-aos="fade-up" data-aos-delay="200">
+            <div class="content">
+              <h3>OASIS</h3>
+              <p>
+                UI/UX Design for a Beauty Services Marketplace Mobile App.
+              </p>
+              <a href="#" class="btn more-btn">Learn More</a>
+            </div>
+          </div>
+
+        </div><!-- Features Item -->
+
+        <div class="row gy-4 justify-content-between features-item">
+
+          <div class="col-lg-5 d-flex align-items-center order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="content">
+              <h3>ENERGY AND WATER SETA</h3>
+              <p>
+                Career Guidance Portal Website.
+              </p>
+              <p></p>
+              <a href="#" class="btn more-btn">Learn More</a>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="200">
+            <img src="https://sp-ao.shortpixel.ai/client/to_auto,q_lossless,ret_img,w_1536/https://melsoft.co.za/wp-content/uploads/2024/04/Melsoft-WB-08-1536x865.png" class="img-fluid" alt="">
+          </div>
+
+        </div><!-- Features Item -->
+
+      </div>
+
+    </section><!-- /Features Details Section -->
+
+    <!-- Services Section -->
+    <section id="services" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Services</h2>
+        <p>At Melsot, we combine technical expertise with creative vision to deliver solutions that propel your business forward. Whether you’re a startup or a global enterprise, our dedicated team is committed to exceeding your expectations and achieving your business objectives.
+
+          Explore our services and discover how Melsoft can empower your digital journey. Get in touch with us today to learn more about our tailored solutions.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row g-5">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item item-cyan position-relative">
+              <i class="bi bi-code"></i>
+              <div>
+                <h3>Software Development</h3>
+                <p>Utilizing the latest technologies, our software engineers work with you to bring your ideas to life and deliver a seamless front and back-end experience optimized to obtain conversions. We develop your web, mobile or desktop apps with the functionality for now and with the capability for future evolution.</p>
+                <a href="service-details.html" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item item-orange position-relative">
+              <i class="fa-solid fa-network-wired"></i>
+
+              <div>
+                <h3>Website Development</h3>
+                <p>As an award-winning web design company, our dedicated design team combines custom human-centred design techniques with conversion-focused practices. It tops it off with SEO optimization for enhanced web visibility. In addition, we incorporate the best UI/UX experience to complement your brand and embrace your input and approval to ensure your website looks just as you imagined.</p>
+                <a href="service-details.html" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item item-teal position-relative">
+              <i class="fa-solid fa-globe"></i>
+
+              <div>
+                <h3>Ad-Hoc Services</h3>
+                <p>As your full-service digital partner, we also offer complementary services to all things digital, such as Domain Registration, 24/7 Hosting, Support and Maintenance.</p>
+                <a href="service-details.html" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item item-red position-relative">
+              <i class="fa-solid fa-ranking-star"></i>
+              <div>
+
+                <h3>Digital Marketing</h3>
+                <p>We create and execute omnichannel digital marketing strategies. From SEO and content to paid search and social, we work with you to capture and convert your target audience.</p>
+                <a href="service-details.html" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item item-indigo position-relative">
+              <i class="fa-solid fa-file-contract"></i>
+              <div>
+
+                <h3>Branding</h3>
+                <p>Through listening to your goals, wants, and needs, we deliver robust and holistic brand strategies that create the foundation for your marketing initiatives to grow your business and ensure your success for today, tomorrow, and years to come.</p>
+                <a href="service-details.html" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item item-pink position-relative">
+              <i class="fa-brands fa-app-store-ios"></i>
+              <div>
+                <h3>App Development</h3>
+                <p>We specialize in creating custom mobile applications tailored to meet your specific business needs. Whether it’s for iOS, Android, or cross-platform development, our solutions are designed to deliver seamless user experiences and drive engagement.</p>
+                <a href="service-details.html" class="read-more stretched-link">Learn More <i class="bi bi-arrow-right"></i></a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
+    <!-- More Features Section -->
+    <section id="more-features" class="more-features section">
+
+      <div class="container">
+
+        <div class="row justify-content-around gy-4">
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center order-2 order-lg-1" data-aos="fade-up" data-aos-delay="100">
+            <h3>Our Weekly Updates and Newsletter</h3>
+            <p>Stay tuned for expert insights, actionable tips, and inspiring case studies to help you harness the full potential of responsive web design. Don’t miss out – subscribe to our newsletter for regular updates and exclusive content straight to your inbox.
+
+            </p>
+
+            <div class="row">
+
+              <div class="col-lg-6 icon-box d-flex">
+                <i class="bi bi-patch-check flex-shrink-0"></i>
+                <div>
+                  <h4>Artificial Intelligence</h4>
+                  <p>Get insights from expets about what the future holds in the world of AI and newly introduced technologies. </p>
+                </div>
+              </div><!-- End Icon Box -->
+
+              <div class="col-lg-6 icon-box d-flex">
+                <i class="bi bi-patch-check flex-shrink-0"></i>
+                <div>
+                  <h4>Cybersecurity</h4>
+                  <p>Stay ahead with our Cybersecurity tips on how to be safe when surfing the web.</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+              <div class="col-lg-6 icon-box d-flex">
+                <i class="bi bi-patch-check flex-shrink-0"></i>
+                <div>
+                  <h4>E-Commerce</h4>
+                  <p>Stay in the loop of the updates in the e-commerce market to know what are the market trends.</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+              <div class="col-lg-6 icon-box d-flex">
+                <i class="bi bi-patch-check flex-shrink-0"></i>
+                <div>
+                  <h4>Awards </h4>
+                  <p>Get noticed for when we get awarded in the enterpreneural journey.</p>
+                </div>
+              </div><!-- End Icon Box -->
+
+            </div>
+
+          </div>
+
+          <div class="features-image col-lg-5 order-1 order-lg-2" data-aos="fade-up" data-aos-delay="200">
+            <img src="https://media.istockphoto.com/id/1486820262/photo/orange-plane-symbol-glowing-amid-black-lightbulb-symbols-on-black-background.jpg?b=1&s=612x612&w=0&k=20&c=NDJsc17r6sJm375PJOkgz-KPQY48tJTxbUJMRsUf6OA=" alt="">
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /More Features Section -->
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Pricing</h2>
+        <p>Thank you for considering our services. Our pricing is designed to be affordable and flexible, with several options to choose from to meet your needs.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
+            <div class="pricing-item">
+              <h3>Standard Plan</h3>
+              <p class="description">Ideal for Small Companies and startups needing essential Software developmant and support without advanced features. </p>
+              <h4><sup>$</sup>10<span> / month</span></h4>
+              <a href="#" class="cta-btn">Start a free trial</a>
+              <p class="text-center small">No credit card required</p>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Basic Software Development: Includes development of web applications, basic mobile apps.</span></li>
+                <li><i class="bi bi-check"></i> <span>Support: Email support during business hours.</span></li>
+                <li><i class="bi bi-check"></i> <span>Hosting: Shared hosting for developed applications.</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Updates: Regular updates and bug fixes.
+                </span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Advanced Software Development: Full-stack development, complex web applications, mobile apps (iOS and Android).</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Support: Priority email and phone support 24/7.</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Hosting: Dedicated server hosting with enhanced security and performance.</span></li>
+              </ul>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="200">
+            <div class="pricing-item featured">
+              <p class="popular">Popular</p>
+              <h3>Premium Plan</h3>
+              <p class="description">Ideal for: Growing business requiring more advanced software solutions responsive support.</p>
+              <h4><sup>$</sup>29<span> / month</span></h4>
+              <a href="#" class="cta-btn">Start a free trial</a>
+              <p class="text-center small">No credit card required</p>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Advanced Software Development: Full-stack development, complex web applications, mobile apps (iOS and Android).</span></li>
+                <li><i class="bi bi-check"></i> <span>Support: Priority email and phone support 24/7.</span></li>
+                <li><i class="bi bi-check"></i> <span>Hosting: Dedicated server hosting with enhanced security and performance.</span></li>
+                <li><i class="bi bi-check"></i> <span>Updates: Continuous integration and deployment (CI/CD) pipeline for rapid updates.</span></li>
+                <li><i class="bi bi-check"></i> <span>Custom Software Solutions: Bespoke software development tailored to specific business needs.</span></li>
+                <li><i class="bi bi-check"></i> <span>Support: Dedicated account manager, 24/7 priority support including emergency response.</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Hosting: Cloud hosting with auto-scaling and high availability.</span></li>
+              </ul>
+            </div>
+          </div><!-- End Pricing Item -->
+
+          <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="300">
+            <div class="pricing-item">
+              <h3>Diamond Plan</h3>
+              <p class="description">Ideal for: Large enterprises needing highly customized software solutions withrobust support and infrasture.</p>
+              <h4><sup>$</sup>49<span> / month</span></h4>
+              <a href="#" class="cta-btn">Start a free trial</a>
+              <p class="text-center small">No credit card required</p>
+              <ul>
+                <li><i class="bi bi-check"></i> <span>Updates: Automated testing, performance monitoring, and proactive maintenance.</span></li>
+                <li><i class="bi bi-check"></i> <span>Hosting: Cloud hosting with auto-scaling and high availability.</span></li>
+                <li><i class="bi bi-check"></i> <span>Support: Dedicated account manager, 24/7 priority support including emergency response.</span></li>
+                <li><i class="bi bi-check"></i> <span>Custom Software Solutions: Bespoke software development tailored to specific business needs.</span></li>
+                <li><i class="bi bi-check"></i> <span>Additional Services:Advanced analytics and business intelligence.</span></li>
+                <li><i class="bi bi-check"></i> <span>Regular consultations and strategic planning sessions.</span></li>
+                <li><i class="bi bi-check"></i> <span>Proactive monitoring and maintenance.</span></li>
+              </ul>
+            </div>
+          </div><!-- End Pricing Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Pricing Section -->
+
+    
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+        <p>At Melsoft we value our Clients , hence we encourage feedback with our clients and this is what they said.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 1
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  What was the scope of their involvement?
+
+Melsoft has provided WordPress website development and hosting services for us. We’ve started by providing them with all our materials for our existing website so they can migrate the platform to their hosting environment.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+                  <h3>IT Services</h3>
+                  <h4>Ceo &amp; Founder</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  How did you come to work with Melsoft?
+
+When I was shopping around for trustworthy software design companies, I came across Melsoft’s profile online and was intrigued by the simplicity of our interaction. Understanding what they would do for us was very easy for me. Thus, their communication, more than anything else, was what made me decide to go with them.
+
+Their team simplified what they would do for us in terms of designing our website. On top of that, they were great at answering questions when there were things that I didn’t understand, such as the general terminology. Additionally, the quote was right for our needs. Overall, they made it very easy to trust in them
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+                  <h3> ZimZet Financials</h3>
+                  <h4>Designer</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Here are the measurable outcomes that demonstrate the progress and success of the project: 
+
+User Engagement: Since the implementation of the app, we've seen significant user engagement, with over 100 orders coming in through the app on a weekly basis. 
+Revenue Increase: As a new venture, the platform has allowed us to generate a revenue stream through the sale of bus tickets and other services, marking a successful entrance into the digital commerce space. 
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+                  <h3>Zimbabwe Immigration Federation</h3>
+                  <h4>Store Owner</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  What was the scope of their involvement?
+
+Melsoft is building our app for iOS and Android platforms; the product is a coaching app where users submit the competencies of the person they're coaching, determining whether they are eligible for the training program or not.They were quick at fixing bugs that arie and we are delighted with their services.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
+                  <h3>Mercuri International</h3>
+                  <h4>Systems Administrator</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="stars">
+                  <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                </div>
+                <p>
+                  Melsoft has successfully created a functional and well-designed site. As a result, the newly built platform has received positive commendations from the internal team and encouraged customers to sell their products. The team has established multiple communication tools to ensure consistent updates.
+                </p>
+                <div class="profile mt-auto">
+                  <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
+                  <h3>Popsoko</h3>
+                  <h4>Managing Director</h4>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>
+          Melsoft has a hybrid working policy with most of our staff working remotely, so please contact us before coming through to our offices to avoid disappointments. Thank you!</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-geo-alt"></i>
+              <h3>Address</h3>
+              <p>Johannesburg Address (HQ)
+                173 Oxford Road, Rosebank, Sandton, 2196</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-telephone"></i>
+              <h3>Call Us</h3>
+              <p>+27 11 282 0817</p>
+              <p>+27 81 716 7573</p>
+            </div>
+          </div><!-- End Info Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-envelope"></i>
+              <h3>Email Us</h3>
+              <p>info@melsoft.co.za</p>
+            </div>
+          </div><!-- End Info Item -->
+
+        </div>
+
+        <!-- End Google Maps -->
+
+          <div class="col-lg-6">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="400">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+
+                <div class="col-md-6 ">
+                  <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <input type="text" class="form-control" name="subject" placeholder="Subject" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <textarea class="form-control" name="message" rows="6" placeholder="Message" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">Melsoft</span>
+          </a>
+          <div class="footer-contact pt-3">
+            <p>173 Oxford Road</p>
+            <p>Rosebank, Sandton,2196</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+27 81 716 7573</span></p>
+            <p><strong>Email:</strong> <span>info@melsoft.co.za</span></p>
+          </div>
+          <div class="social-links d-flex mt-4">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Product Management</a></li>
+            <li><a href="#">Marketing</a></li>
+            <li><a href="#">Graphic Design</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-12 footer-newsletter">
+          <h4>Our Newsletter</h4>
+          <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
+          <form action="forms/newsletter.php" method="post" class="php-email-form">
+            <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
+            <div class="loading">Loading</div>
+            <div class="error-message"></div>
+            <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">Melsoft@2024</strong><span>All Rights Reserved</span></p>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://github.com/Banele08">Banele Mkefa</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
